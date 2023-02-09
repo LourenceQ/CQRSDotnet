@@ -23,7 +23,7 @@ public class CreateTodoCommand : ICommand
     {
         AddNotifications(
             new Contract().Requires.HasMinLen(Title, 3, "Title", "Favor decrever tarefa.")
-            .HasMinLen(User, 6, "User", "Usuário inválido");
+            .HasMinLen(User, 6, "User", "Usuário inválido")
         );
         throw new NotImplementedException();
     }
